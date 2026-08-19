@@ -49,7 +49,7 @@ export default function Testimonials() {
             Client Love
           </span>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-cream leading-[1.02]">
-            Loved by anxious pups and their people.
+            Loved by pups and their people, every visit.
           </h2>
         </Reveal>
 
