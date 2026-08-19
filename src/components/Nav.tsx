@@ -49,7 +49,7 @@ export default function Nav() {
           <a
             href="#top"
             onClick={(e) => handleClick(e, "#top")}
-            className="font-display text-2xl tracking-wide text-cream flex items-center gap-2"
+            className="font-display text-2xl tracking-wide text-cream flex items-center gap-2 py-2 -my-2"
           >
             <span className="text-gold-light">AMG</span>
             <span className="hidden sm:inline text-xs font-sans font-medium tracking-[0.2em] uppercase text-plum-300 mt-1">

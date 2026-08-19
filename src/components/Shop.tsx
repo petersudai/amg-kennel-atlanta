@@ -47,7 +47,7 @@ export default function Shop() {
               Boutique Shop
             </span>
             <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-cream leading-[1.02]">
-              Everything on the shelf, picked for real pets.
+              Curated by groomers, not algorithms.
             </h2>
           </div>
           <a

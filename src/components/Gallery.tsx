@@ -61,7 +61,7 @@ export default function Gallery() {
                   loading="lazy"
                   className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-plum-950/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-plum-950/80 sm:from-plum-950/70 via-transparent to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <figcaption className="text-cream font-semibold text-sm">{captions[i]}</figcaption>
                 </div>
               </motion.figure>

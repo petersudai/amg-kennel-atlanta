@@ -42,9 +42,9 @@ export default function Visit() {
             <p className="font-display text-2xl text-gold-light mb-6">Studio Hours</p>
             <ul className="space-y-4">
               {hours.map((h) => (
-                <li key={h.label} className="flex items-center justify-between gap-4 border-b border-cream/10 pb-3">
+                <li key={h.label} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-0.5 sm:gap-4 border-b border-cream/10 pb-3">
                   <span className="text-cream/80 font-medium text-sm sm:text-base">{h.label}</span>
-                  <span className="font-display text-lg sm:text-xl text-cream text-right">{h.value}</span>
+                  <span className="font-display text-lg sm:text-xl text-cream sm:text-right">{h.value}</span>
                 </li>
               ))}
             </ul>
@@ -58,7 +58,7 @@ export default function Visit() {
               <p className="text-plum-300 text-sm mt-1">Exact studio address shared at booking confirmation.</p>
               <a
                 href="tel:+14045730317"
-                className="inline-flex mt-5 items-center gap-2 text-gold-light font-display text-xl hover:text-gold transition-colors"
+                className="inline-flex mt-5 items-center gap-2 text-gold-light font-display text-xl hover:text-gold transition-colors py-2 -my-2"
               >
                 (404) 573-0317
               </a>
