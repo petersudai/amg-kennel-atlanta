@@ -3,6 +3,7 @@ import Reveal from "./Reveal";
 import Marquee from "./Marquee";
 import PawScatter from "./PawScatter";
 import { img } from "../lib/images";
+import { smoothScrollTo } from "../lib/scroll";
 
 const products = [
   {
@@ -54,7 +55,7 @@ export default function Shop() {
             href="#visit"
             onClick={(e) => {
               e.preventDefault();
-              document.querySelector("#visit")?.scrollIntoView({ behavior: "smooth" });
+              smoothScrollTo("#visit");
             }}
             className="group inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-ink font-bold px-7 py-4 rounded-full transition-all duration-300 hover:-translate-y-1 shadow-xl shadow-gold/20 shrink-0"
           >
@@ -109,7 +110,7 @@ export default function Shop() {
               href="#book"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector("#book")?.scrollIntoView({ behavior: "smooth" });
+                smoothScrollTo("#book");
               }}
               className="shrink-0 inline-flex items-center gap-2 border border-gold/50 hover:bg-gold hover:text-ink text-gold-light font-semibold px-5 py-3 rounded-full transition-colors duration-300"
             >

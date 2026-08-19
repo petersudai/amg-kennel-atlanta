@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Reveal from "./Reveal";
 import PawScatter from "./PawScatter";
 import { img } from "../lib/images";
+import { smoothScrollTo } from "../lib/scroll";
 
 const services = [
   {
@@ -99,7 +100,7 @@ export default function Services() {
               href="#book"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector("#book")?.scrollIntoView({ behavior: "smooth" });
+                smoothScrollTo("#book");
               }}
               className="group flex flex-col items-start justify-between h-full min-h-[260px] rounded-[2rem] bg-gold hover:bg-gold-light transition-colors p-6"
             >

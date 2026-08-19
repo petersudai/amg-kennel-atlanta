@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { smoothScrollTo } from "../lib/scroll";
 
 const LINKS = [
   { href: "#story", label: "Our Story" },
@@ -24,7 +25,7 @@ export default function Nav() {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setOpen(false);
-    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    smoothScrollTo(href);
   };
 
   return (

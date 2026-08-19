@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { img } from "../lib/images";
 import Marquee from "./Marquee";
 import Paw from "./Paw";
+import { smoothScrollTo } from "../lib/scroll";
 
 const headline = ["Atlanta", "Meets", "Groomers"];
 
@@ -98,7 +99,7 @@ export default function Hero() {
               href="#book"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector("#book")?.scrollIntoView({ behavior: "smooth" });
+                smoothScrollTo("#book");
               }}
               className="group inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-ink font-bold px-7 py-4 rounded-full transition-all duration-300 hover:-translate-y-1 shadow-xl shadow-gold/20"
             >
@@ -109,7 +110,7 @@ export default function Hero() {
               href="#services"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector("#services")?.scrollIntoView({ behavior: "smooth" });
+                smoothScrollTo("#services");
               }}
               className="inline-flex items-center gap-2 border border-cream/30 hover:border-gold text-cream font-semibold px-7 py-4 rounded-full transition-all duration-300 hover:bg-cream/5"
             >
@@ -159,7 +160,7 @@ export default function Hero() {
             href="#shop"
             onClick={(e) => {
               e.preventDefault();
-              document.querySelector("#shop")?.scrollIntoView({ behavior: "smooth" });
+              smoothScrollTo("#shop");
             }}
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
