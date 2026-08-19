@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SmoothScroll from "../components/SmoothScroll";
+import Nav from "../components/Nav";
+import Hero from "../components/Hero";
+import Story from "../components/Story";
+import Services from "../components/Services";
+import Shop from "../components/Shop";
+import Gallery from "../components/Gallery";
+import Testimonials from "../components/Testimonials";
+import Visit from "../components/Visit";
+import BookingForm from "../components/BookingForm";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+  <SmoothScroll client:load />
+  <Nav client:load />
+  <main>
+    <Hero client:load />
+    <Story client:visible />
+    <Services client:visible />
+    <Shop client:visible />
+    <Gallery client:visible />
+    <Testimonials client:visible />
+    <Visit client:visible />
+    <BookingForm client:load />
+  </main>
+  <Footer />
+</Layout>
