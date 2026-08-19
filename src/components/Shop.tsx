@@ -75,7 +75,6 @@ export default function Shop() {
                       className="w-full h-full object-cover transition-transform duration-700 ease-out will-change-transform group-hover:scale-105"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-plum-900 to-transparent" />
                   </div>
                   <div className="p-5">
                     <h3 className="font-display text-xl text-cream mb-1.5">{p.title}</h3>
