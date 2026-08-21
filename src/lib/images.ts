@@ -15,6 +15,7 @@ export const img = {
   shopToys: u("photo-1535294435445-d7249524ef2e", 900),
   shopBandanas: u("photo-1709771818873-57feeea88f41", 900),
   visitPortrait: u("photo-1614261812340-5ee9a3ed33a3", 1200),
+  ctaGlow: u("photo-1757553532955-38d5d1c735d2", 1000),
   gallery: [
     u("photo-1625277743460-43716b93507a", 900),
     u("photo-1674833442464-1a9acfa9fa11", 900),

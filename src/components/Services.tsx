@@ -102,12 +102,22 @@ export default function Services() {
                 e.preventDefault();
                 smoothScrollTo("#book");
               }}
-              className="group flex flex-col items-start justify-between h-full min-h-[260px] rounded-[2rem] bg-gold hover:bg-gold-light transition-colors p-6"
+              className="group relative flex flex-col items-start justify-between h-full min-h-[260px] rounded-[2rem] overflow-hidden p-6"
             >
-              <span className="font-display text-3xl text-ink leading-tight">
+              <img
+                src={img.ctaGlow}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gold/88 group-hover:bg-gold-light/85 transition-colors duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/15 via-transparent to-transparent" />
+
+              <span className="relative z-10 font-display text-3xl text-ink leading-tight">
                 Ready for a fresh look?
               </span>
-              <span className="inline-flex items-center gap-2 font-bold text-ink">
+              <span className="relative z-10 inline-flex items-center gap-2 font-bold text-ink">
                 Book your groom
                 <span className="transition-transform group-hover:translate-x-1">&rarr;</span>
               </span>
